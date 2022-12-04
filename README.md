@@ -12,7 +12,7 @@ N/A
 
 Each button on the navigation bar is link to the relevant section. The 'Order' page is linking to an external website.
 
-The page is available at
+The page is available at https://helldorado82.github.io/coffee-shop/.
 
 ## Credits
 
