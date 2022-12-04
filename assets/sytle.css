@@ -94,7 +94,8 @@ body {
 #menu-section {
     display: flex;
     font-family: 'Anton', sans-serif;
-    width: max-content margin-left: 50px;
+    width: max-content;
+    margin-left: 50px;
 
     background-image: linear-gradient(to top, rgb(172, 117, 117), rgb(85, 58, 58));
     object-fit: contain;
