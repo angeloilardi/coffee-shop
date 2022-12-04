@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+.nav-container ul {
+    position: fixed;
+    width: 50%;
+    top: 0;
+    left: 0;
+    text-align: left;
+    background: rgb(36, 41, 44);
+    height: 80%;
+    z-index: 7;
+    padding-top: 3em;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: white;
+
+
+}
+
+.nav-container {
+    text-decoration: none;
+    color: white
+}
+
+.nav-container li {
+    padding: 10px 0;
+}
+
+#menu-bars {
+    position: fixed;
+    width: 60px;
+
+    color: black;
+    padding: 1rem;
+
+}
+
+.exit-btn {
+
+    margin-left: -1.3em;
+    text-align: left;
+    cursor: pointer;
+
+}
+
+.hero-image {
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: url(/images/pexels-jason-villanueva-851555.jpg);
+    background-position: center;
+    opacity: 0.7;
+
+
+
+
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: rgb(45, 2, 2);
+    margin-left: 30px;
+    font-size: 22px;
+}
+
+.hero-text h1 {
+    font-size: 4.5rem;
+}
+
+
+
+
+
+#menu-section {
+    display: flex;
+    font-family: 'Anton', sans-serif;
+    width: max-content margin-left: 50px;
+
+    background-image: linear-gradient(to top, rgb(172, 117, 117), rgb(85, 58, 58));
+    object-fit: contain;
+    height: 80%;
+    top: 80px;
+
+
+}
+
+/* .header h1{
+    
+    font-size: 13vmin;
+    color:black;
+    
+} */
+/* #menu-section {
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	color: rgb(45, 18, 18);
+	max-width: 100%;
+	margin: auto;
+    padding: 0 20px;
+    
+    background-image: linear-gradient(to top, rgb(172, 117, 117), rgb(85, 58, 58));
+    
+    
+    
+} */
+#menu-section img {
+    width: 100%;
+    height: auto;
+
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 300px;
+    /* 
+	In the order, equal to
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 300px;
+	*/
+
+    margin: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    justify-content
+}
+
+.menu-content p {
+    margin-top: 15px;
+}
+
+#story-section {
+    display: flex;
+    color: rgb(45, 18, 18);
+    max-width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 25px;
+
+    background-image: linear-gradient(to bottom, rgb(172, 117, 117), rgb(215, 170, 170));
+
+}
+
+#story-section img {
+    min-width: 200px;
+    width: 100%;
+    float: left;
+    padding: 20px;
+    height: 50auto;
+    margin-top: 50px;
+
+
+}
+
+#story-section p {
+    padding: 20px;
+    text-align: justify;
+    flex-flow: row-reverse;
+}
+
+.contacts {
+    height: 90px;
+    background-color: black;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    font-family: 'Anton', sans-serif;
+
+
+}
+
+.contacts a {
+    color: white;
+    margin: 1rem;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+@media only screen and (min-width: 560px) {
+    .nav-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-container ul {
+
+        display: flex;
+        background-color: #5c5959db;
+        color: white;
+        height: 100px;
+        position: fixed;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        z-index: 3;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        ;
+
+    }
+
+    .nav-bar li {
+        padding: 15px;
+
+        border: 1px solid white;
+        margin: 12px 20px;
+        text-align: center;
+
+
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 760px) {
+    #menu-section {
+        flex-direction: row;
+
+    }
+}

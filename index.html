@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/sytle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/76d4d94d08.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+            <div class="nav-container">
+                <a id="menu-bars" class="hide-desktop" href="#"><i class=" fas fa-bars" id="menu"></i></a>
+                <ul class="nav-bar show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <i class="far fa-times-circle"></i>
+                    </li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#menu-section">Menu</a></li>
+                    <li><a href="#story-section">Our Story</a></li>
+                    <li>Contacts</li>
+                    <li>Order</li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>coffe is always a good idea</h1>
+        </div>
+        </h1>
+    </div>
+    <div id="menu-section">
+        <section class="menu-content" id="drinks">
+            <img src="./images/pexels-viktoria-alipatova-2074130.jpg" alt="coffee shop table">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sapiente facilis necessitatibus fuga
+                reiciendis repudiandae, minima quae accusantium similique illo. Omnis molestias quam fuga illum laborum
+                accusantium amet incidunt nam.</p>
+        </section>
+        <section id="food" class="menu-content">
+            <img src="./images/pexels-porapak-apichodilok-373639.jpg" alt="barista picture">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis corrupti velit architecto accusamus
+                adipisci beatae ut, iste perspiciatis, temporibus quisquam aliquid nulla ullam laboriosam nisi nobis
+                nemo voluptas laborum vero possimus illo id. Eos veniam, dolorem explicabo officiis iusto sint impedit
+                cumque natus harum, magni exercitationem maiores distinctio sequi expedita.</p>
+        </section>
+    </div>
+    <div id="story-section">
+        <div class="float"><img src="./images/pexels-dmitry-zvolskiy-3679601.jpg" alt="coffe shop picture"></div>
+        <div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt earum mollitia amet nostrum quos odio
+                sequi maiores nisi eos perspiciatis commodi ut unde sunt, quibusdam officia rerum architecto vitae? Hic
+                eligendi repellat quia reiciendis, asperiores blanditiis maiores reprehenderit saepe beatae eaque at
+                dolore nam mollitia natus illum odio obcaecati, cupiditate magnam? <br> Voluptatem eius pariatur quasi qui,
+                recusandae accusamus dolorum eos doloribus quaerat, exercitationem amet, perferendis distinctio magni
+                quo. Maiores, nam?<br><br>
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sapiente est laboriosam beatae ab cum perferendis distinctio quia at commodi adipisci libero quisquam qui sint eaque, praesentium consectetur? Quisquam iste corporis ratione ipsum suscipit, cupiditate accusamus non ab, voluptatum odit voluptas distinctio ex tenetur at necessitatibus perspiciatis iusto quidem qui?
+
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt earum mollitia amet nostrum quos odio
+                sequi maiores nisi eos perspiciatis commodi ut unde sunt, quibusdam officia rerum architecto vitae? Hic
+                eligendi repellat quia reiciendis, asperiores blanditiis maiores reprehenderit saepe beatae eaque at
+                dolore nam mollitia natus illum odio obcaecati, cupiditate magnam? <br> Voluptatem eius pariatur quasi qui,
+                recusandae accusamus dolorum eos doloribus quaerat, exercitationem amet, perferendis distinctio magni
+                quo. Maiores, nam?<br><br>
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="contacts">
+            <p>Follow us on</p>
+            <a href="instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="twitter.com"><i class="fab fa-twitter"></i></a>
+
+        </div>
+    </footer>
+    <script>
+        var menu = document.getElementById("menu");
+        var nav = document.getElementById("nav");
+        var exit = document.getElementById("exit");
+        menu.addEventListener('click', function (e) {
+
+            nav.classList.toggle("hide-mobile");
+            e.preventDefault();
+
+        });
+        exit.addEventListener('click', function (e) {
+
+            nav.classList.add("hide-mobile");
+            e.preventDefault();
+        })
+    </script>
+</body>
+
+</html>
